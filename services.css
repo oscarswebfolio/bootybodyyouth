@@ -1,0 +1,957 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Heebo', serif;
+    overflow-x: hidden;
+    background-color: rgb(122, 91, 201);
+  }
+  /*Burger Icon*/
+  .logo__mobile {
+    display: none;
+    
+  }
+
+  /*scroll to top*/
+  #myBtn {
+    position: fixed;
+    display: none;
+    bottom: 20px;
+    right: 10px;
+    z-index: 99;
+    font-size: 25px !important;
+    border: none;
+    outline: none;
+    background-color: grey;
+    opacity: .4;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  #myBtn:hover {
+    background-color: #555;
+    opacity: 1;
+  }
+  .logo {
+    position: fixed;
+    top: 4px;
+    left: 4px;
+    z-index: 101;
+    width: 50px;
+    overflow: hidden;
+    opacity: 0.5;
+  }
+  .logo:hover {
+    opacity: 1;
+    width: 170px;
+  }
+  .header {
+    background: url('BootyBodyYouth-Dumbbells.jpg') no-repeat center;
+    background-size: cover;
+    height: 900px;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  .bar {
+    width: 65vw;
+    background-color: rgb(122, 91, 201);
+    height: 400px;
+    position: absolute;
+    bottom: -180px;
+    left: -140px;
+    transform: rotate(20deg);
+    /*border-radius: 0px 100% 0px 0px;*/
+    overflow: hidden;
+  }
+  .bar_mirror {
+    width: 65vw;
+    background-color: rgb(122, 91, 201);
+    height: 400px;
+    position: absolute;
+    bottom: -180px;
+    right: -140px;
+    transform: rotate(-20deg);
+      /*border-radius: 100% 0px 0px 0px;*/
+      overflow: hidden;
+  }
+  .title_container {
+    position: relative;
+    bottom: 70px;
+    overflow: hidden;
+  }
+  .title_one {
+    margin: 0;
+    font-size: 100px;
+    font-family: 'Norican', sans-serif;
+    color: rgb(122, 91, 201);
+    text-shadow: 0px -2px 1px rgba(255, 255, 255, 0.685);
+    overflow: hidden;
+    font-weight: 100;
+  }
+  .title_two {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 400;
+    overflow: hidden;
+    color: #ededed;
+  }
+  .sub {
+    font-size: 25px;
+    color: white;
+    width: 800px;
+    margin-top: 10px;
+    font-weight: 400;
+    text-align: center;
+  }
+  /*Main Styles*/
+  .main {
+    padding-bottom: 0px;
+    background-color: rgb(122, 91, 201);
+  }
+  /*Jason Quote*/
+  .quote_sub_container {
+    z-index: 100000 !important;
+    width: 700px;
+    height: 250px;
+    margin: auto;
+    background-color: white;
+    box-shadow: inset 0px 0px 104px black, 0px 0px 10px rgba(0, 0, 0, 0.7);
+    position: relative;
+    bottom: 300px;
+    border-radius: 40px;
+    visibility: hidden; /*Change this to revert*/
+  }
+  .quote {
+    font-size: 25px;
+    width: 600px;
+    position: relative;
+    top: 60px;
+    margin: auto;
+    z-index: 1001;
+    text-shadow: 0px 0px 121px white;
+  }
+/*The Boxless Method*/
+.boxless_method_container {
+  position: relative;
+  bottom: 200px;
+  width: 700px;
+  margin: auto;
+  border-radius: 6px;
+  background-color: rgb(250, 250, 250);
+  padding: 20px;
+  box-shadow: 0px 0px 10px #7c7777;
+  overflow: hidden;
+}
+.boxless_method_title {
+  font-size: 35px;
+  margin-bottom: -15px;
+}
+#mt {
+    margin-top: 50px;
+    border-top: 1px dashed rgb(122, 91, 201);
+}
+.bx_title {
+  font-size: 20px;
+  font-weight: 800;
+  padding-bottom: 10px;
+  padding-top: 10px;
+ /* border-bottom: 1px dashed #B52025;
+  border-top: 1px dashed #B52025;*/
+}
+.bx_paragraph {
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: -20px;
+}
+.bx__p1, .bx__p2 {
+  margin-bottom: -20px;
+}
+.services__link {
+
+}
+.services__button {
+  padding: 20px;
+  font-size: 20px;
+  background-color: rgb(20, 20, 20);
+  color: white;
+  width: 100%;
+  border: 1px solid rgb(122, 91, 201);
+  cursor: pointer;
+ border-radius: 5px;
+ margin-top: 50px;
+}
+.services__button:hover {
+  background-color: rgb(122, 91, 201);
+}
+.services__button-1, .services__button-2 {
+
+}
+/*Recent Work*/
+.recent_work_container {
+  padding-bottom: 40px;
+  padding-top: 10px;
+  background-color: #ededed;
+  overflow: hidden;
+}
+.recent_work_title {
+  text-align: center;
+  font-size: 35px;
+  margin: 0;
+  margin-top: 20px;
+}
+.recent_work_paragraph {
+ width: 800px;
+ margin: auto;
+ margin-top: 10px;
+ font-size: 20px;
+ text-align: center;
+}
+.project_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+.website {
+  width: 300px;
+  height: 300px;
+  background: url('/placeholder-image.jpg');
+  margin-top: 30px;
+}
+.web1 {
+  background: url('/zoom-website.PNG') center;
+  background-size: 480px;
+  background-position: -84px 43px;
+}
+.legal__link {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+  
+}
+.legal__link:hover {
+  text-decoration: underline;
+}
+.legal {
+  margin-top: 20px;
+}
+.web2 {
+  background: url('/toms-steakhouse.PNG') center;
+  background-size: 900px;
+  background-position-y: -30px;
+  background-position-x: -294px;
+}
+.web3 {
+  background: url('/liz-website.PNG');
+  background-size: cover;
+  background-position-x: -100px;
+}
+.testimonial {
+  margin-top: 50px;
+}
+.testimonial__image {
+  width: 300px;
+  border-radius: 10px;
+  margin: auto;
+  display: block;
+}
+.testimonial__image-2 {
+  width: 450px;
+}
+.testimonial__name {
+  font-size: 20px;
+  text-align: center;
+}
+.testimonial__info {
+  text-align: center;
+}
+/*Full Digital Production Company*/
+.full_services_container {
+    background: url('abstract.png');
+    background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+  }
+  .full_services_title {
+    text-align: center;
+    font-size: 35px;
+    margin: auto;
+    text-shadow: 0 2px 2px black;
+    margin-top: 50px;
+
+  }
+  .full_services_grid_container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 800px;
+      margin: auto;
+  }
+  .full_services_paragraph {
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 21px;
+    text-align: center;
+  }
+  .full_service_box {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 40px;
+    display: grid;
+    place-items: center;
+  }
+  .included {
+    width: 500px;
+    font-size: 24px;
+    margin: auto;
+    margin-top: 5px;
+  }
+  .service_image_one {
+    width: 90px;
+    position: relative;
+    top: 30px;
+  }
+  .service_image_two {
+    width: 130px;
+    position: relative;
+    top: 15px;
+  }
+  .service_image_three {
+    width: 100px;
+    transform: rotate(180deg);
+    position: relative;
+    top: 20px;
+  }
+  .service_image_four {
+    width: 100px;
+    position: relative;
+    top: 25px;
+  }
+  .un_decorate {
+    text-decoration: none;
+  }
+  .two {
+    position: relative;
+    bottom: 19px;
+  }
+  .info_one {
+    position: relative;
+    bottom: 30px;
+  }
+  .info_two {
+    position: relative;
+    bottom: 34px;
+  }
+  .info_three {
+    position: relative;
+    bottom: 30px;
+  }
+  .info_four {
+    position: relative;
+    bottom: 30px;
+  }
+  .service_name {
+    color: #B52025;
+    margin: 0;
+  }
+  .service_information {
+    color: black;
+    text-align: center;
+    width: 240px;
+  }
+/*Contact Us*/
+.contact_us_container {
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+  .contact_us_title {
+    font-size: 40px;
+    margin: 0;
+    margin-top: 20px;
+  }
+  .contact_us_paragraph {
+    width: 800px;
+    text-align: center;
+  }
+  form {
+    padding-top: 30px;
+    position: relative;
+    bottom: 30px;
+    overflow: hidden;
+  }
+  form > label {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    margin-left: 0px;
+    margin-bottom: 2px;
+  }
+  form > input {
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 25px;
+    font-size: 22px;
+    height: 35px;
+    background-color: #EDEDED;
+  }
+  form > textarea {
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 120px;
+    background-color: #EDEDED;
+    border: 2px solid black;
+  }
+  [type="submit"] {
+    display: block;
+    margin-top: 20px;
+    background-color: rgb(122, 91, 201);
+    color: white;
+    padding: 15px;
+    width: 405px;
+    font-size: 26px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  [type="submit"]:hover {
+    background-color: gray;
+  }
+  form > input:focus {
+    border: none;
+    outline: 2px solid #B52025;
+  }
+  form > textarea:focus {
+    border: none;
+    outline: 2px solid #B52025;
+  }
+  /*Footer Bottom*/
+  .footer_bottom {
+    background-color: #262626;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: grid;
+    overflow: hidden;
+    place-items: center;
+  }
+  .social_media_container {
+    display: flex;
+    margin: auto;
+  }
+  .medium {
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .youtube {
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .linkedIn {
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .twitter {
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .instagram {
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .facebook {
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .google_certified_logo {
+    width: 300px;
+    margin-top: 30px;
+  }
+  .mobile_contact_us {
+      display: none;
+  }
+  @media screen and (min-width: 501px) and (max-width: 850px) {
+  /*Main Styles*/
+  .quote_sub_container {
+    width: 500px;
+    bottom: 50px;
+  }
+  .quote {
+    font-size: 25px;
+    width: 400px;
+  }
+  /*The Boxless Method*/
+.boxless_method_container {
+    width: 400px;
+}
+  .bx_paragraph {
+    font-size: 16px;
+  }
+  .mobile_contact_us {
+    display: none;
+}
+.full_services_grid_container {
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+.full_services_paragraph {
+    width: 80%;
+}
+.full_services_title {
+  font-size: 27px;
+}
+  }
+  @media screen and (min-width: 501px) and (max-width: 1050px) {
+    .logo {
+      width: 40px;
+    }
+    .bar {
+      width: 90%;
+    }
+    .bar_mirror {
+      width: 90%;
+    }
+    .title_container {
+      position: relative;
+      bottom: 120px;
+    }
+    .title_one {
+      font-size: 80px;
+    }
+    .title_two {
+      font-size: 40px;
+    }
+    .sub {
+      font-size: 20px;
+      width: 600px;
+      margin: auto;
+      margin-top: 10px;
+    }
+      /*Jason Quote*/
+  .quote_sub_container {
+    z-index: 100000 !important;
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    background-color: white;
+    box-shadow: inset 0px 0px 104px black, 0px 0px 10px rgba(0, 0, 0, 0.7);
+    position: relative;
+    bottom: 300px;
+    border-radius: 40px;
+  }
+  .quote {
+    font-size: 20px;
+    width: 430px;
+    position: relative;
+    top: 50px;
+    margin: auto;
+    z-index: 1001;
+    text-shadow: 0px 0px 121px white;
+  }
+  .project_container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 650px;
+  }
+  .web3 {
+      transform: translate(160px);
+  }
+  .mobile_contact_us {
+    display: none;
+}
+.medium {
+  width: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.youtube {
+  width: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.linkedIn {
+  width: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.twitter {
+  width: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.instagram {
+  width: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.facebook {
+  width: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.google_certified_logo {
+  width: 250px;
+  margin-top: 30px;
+}
+  }
+  @media screen and (min-width: 501px) and (max-width: 850px) {
+    .project_container {
+        grid-template-columns: repeat(1, 1fr);
+        width: 500px;
+      }
+      
+      .testimonial__image {
+        width: 300px;
+      }
+      .testimonial__image-2 {
+
+      }
+      .testimonial__info {
+        width: 90%;
+        margin: auto;
+      }
+      .web3 {
+          transform: translate(0);
+      }
+      .recent_work_paragraph {
+          width: 80%;
+      }
+      .contact_us_paragraph {
+          width: 450px;
+      }
+      .mobile_contact_us {
+        display: none;
+    }
+    .title_one {
+      font-size: 10vw;
+    }
+    .title_two {
+      font-size: 6vw;
+    }
+    .sub {
+      font-size: 3.3vw;
+      width: 90%;
+      margin: auto;
+      margin-top: 10px;
+    }
+  }
+  @media screen and (min-width: 450px) and (max-width: 501px) {
+     .logo {
+       display: none;
+     }
+     
+     .lame   {
+          margin-left: 99px;
+      }
+      
+      .included {
+        margin-left: 60px;
+      }
+  }
+  @media screen and (min-width: 320px) and (max-width: 501px) {
+    .full_services_container {
+      
+    }
+    
+    .included {
+      font-size: 16px;
+      margin-left: 10px;
+    }
+    .project_container {
+      grid-template-columns: repeat(1, 1fr);
+      width: 500px;
+    }
+    
+    .testimonial__image {
+      width: 300px;
+    }
+    .testimonial__image-2 {
+
+    }
+    .testimonial__info {
+      width: 90%;
+      margin: auto;
+    }
+    #myBtn {
+      display: none;
+      visibility: hidden;
+    }
+    .services__button {
+      width: 280px;
+    }
+    .header {
+      height: 550px;
+    }
+    .bar, .bar_mirror {
+      display: none;
+      
+    }
+    .logo__mobile {
+      display: block;
+      width: 210px;
+      margin: auto;
+      margin-top: 200px;
+    }
+    .logo {
+      display: none;
+    }
+    .bar {
+      width: 95vw;
+    }
+    .bar_mirror {
+      width: 95vw;
+    }
+    .title_container {
+      position: relative;
+      bottom: 160px;
+    }
+    .title_one {
+      font-size: 40px;
+      margin-top: 10px;
+    }
+    .title_two {
+      font-size: 20px;
+      
+    }
+    .sub {
+      display: none;
+    }
+  /*Jason Quote*/
+  .quote_sub_container {
+    z-index: 100000 !important;
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    background-color: white;
+    box-shadow: inset 0px 0px 30px black, 0px 0px 10px rgba(0, 0, 0, 0.7);
+    position: relative;
+    bottom: 300px;
+    border-radius: 0px;
+  }
+  .quote {
+    font-size: 18px;
+    width: 80%;
+    position: relative;
+    top: 35px;
+    margin: auto;
+    z-index: 1001;
+    text-shadow: 0px 0px 121px white;
+  }
+  /*The Boxless Method*/
+  .boxless_method_container {
+    width: 100%;
+    border-radius: 0px;
+    margin-bottom: -200px;
+}
+.boxless_method_title {
+    font-size: 30px;
+}
+  .bx_paragraph {
+    width: 90%;
+    font-size: 16px;
+  }
+  .project_container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 300px;
+  }
+  .web3 {
+      transform: translate(0);
+  }
+  .recent_work_container {
+    margin-top: -200px;
+  }
+  .recent_work_paragraph {
+      width: 90%;
+      text-align: center;
+  }
+  .contact_us_container {
+      display: none;
+  }
+  .mobile_contact_us {
+      display: block;
+  }
+  .mobile_contact_us_title {
+      text-align: center;
+  }
+  .mobile_contact_us_paragraph {
+      width: 90%;
+      margin: auto;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  form > label {
+      font-size: 14px;
+      margin-left: 16px;
+  }
+  form > input {
+      width: 280px;
+      font-size:18px;
+  }
+  form > textarea {
+      width: 280px;
+      font-size: 18px;
+  }
+  [type="submit"] {
+      width: 289px;
+  }
+  .full_services_grid_container {
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+.full_services_paragraph {
+    width: 90%;
+    font-size: 18px;
+    text-align: center
+}
+.full_services_title {
+    font-size: 20px;
+
+}
+.sub {
+  font-size: 16px;
+  width: 280px;
+  margin: auto;
+  margin-top: 10px;
+}
+.medium {
+  width: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.youtube {
+  width: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.linkedIn {
+  width: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.twitter {
+  width: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.instagram {
+  width: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.facebook {
+  width: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.google_certified_logo {
+  width: 300px;
+  margin-top: 30px;
+}
+.google_certified_logo {
+  width: 180px;
+}
+.full_services_title {
+  font-size: 18px;
+}
+  }
+  @media screen and (orientation: landscape) and (max-width: 501px) {
+    .title_container {
+      position: relative;
+      bottom: 230px;
+    }
+  }
+  .logo__mobile {
+    margin-top: 200px;
+    
+  }
+  .burger {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0px;
+    font-size: 40px !important;
+    cursor: pointer;
+    background-color: black;
+    padding-right: 7px;
+    padding-left: 7px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: white;
+    z-index: 201;
+  }
+  /*Side Menu*/
+  .side {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: black;
+    z-index: 10001;
+    display: none;
+  }
+  .side__title {
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 35px;
+    margin-top: -45px;
+    position: relative;
+    top: 45px;
+    font-family: 'Lato', serif;
+    color: rgb(122, 91, 201);
+    text-shadow: 0px 1px 1px #EDEDED;
+  }
+  .exit {
+    font-size: 40px !important;
+    transform: rotate(45deg);
+    position: fixed;
+    color: white;
+    top: 1px;
+    right: 0;
+    margin-right: 4px;
+    cursor: pointer;
+    display: none;
+    z-index: 10002;
+  }
+  .side__link {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  .side__link:hover {
+    color: black;
+  }
+  .side__button {
+    width: 337px;
+    cursor: pointer;
+    background-color: rgb(122, 91, 201);
+    color: white;
+    padding: 8px;
+    position: relative;
+    top: 50px;
+    font-size: 20px;
+    border: none;
+  box-shadow: 0px 0px 1px black;
+  }
+  .side__button:hover {
+    background-color: grey;
+  }
